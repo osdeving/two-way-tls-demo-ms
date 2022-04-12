@@ -3,7 +3,8 @@
 Exemplo de conexão Two Way TLS
 
 Leia mais sobre TLS aqui: https://hpbn.co/transport-layer-security-tls/#optimizing-for-tls
-Veja mais detalhes sobre implementação aqui: https://github.com/Hakky54/mutual-tls-ssl
+
+Veja mais detalhes sobre implementação em Java aqui: https://github.com/Hakky54/mutual-tls-ssl
 
 ## Preparando o Ambiente
 
@@ -16,7 +17,7 @@ identity.jks e truststore.jks são arquivos com keys para certificados do client
 
 
 Em uma comunicação Two Way TLS, o cliente e o servidor precisam trocar certificados,<br>
-então cada um precisa criar um certificado e enviar para o outro incluir no truststore.
+então ambos devem criar um certificado e enviar para sua contra-parte que irá incluí-lo no truststore.
 
 ### Criar public/private key para o servidor
 
